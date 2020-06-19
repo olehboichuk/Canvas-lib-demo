@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -92,6 +93,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +125,47 @@
           }
         }
       }
-    }},
+    },
+    "semi-circle": {
+      "projectType": "library",
+      "root": "projects/semi-circle",
+      "sourceRoot": "projects/semi-circle/src",
+      "prefix": "lux",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/semi-circle/tsconfig.lib.json",
+            "project": "projects/semi-circle/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/semi-circle/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/semi-circle/src/test.ts",
+            "tsConfig": "projects/semi-circle/tsconfig.spec.json",
+            "karmaConfig": "projects/semi-circle/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/semi-circle/tsconfig.lib.json",
+              "projects/semi-circle/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
   "defaultProject": "lux-canvas-lib"
 }

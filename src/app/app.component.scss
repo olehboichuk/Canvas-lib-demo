@@ -1,0 +1,74 @@
+$header_font: "Roboto", serif;
+$header_text_color: #152812;
+$no_active_color: #CACACA;
+$a_text_color: #131ee2;
+$active_border: #222428;
+$hover_text: #0f89ff;
+$active_btn: #222428;
+$form_color: #FFFFFF;
+$color_2: #546087;
+$background_color_1: #0AD69C;
+$background_color_2: #d7dce9;
+$background_color_3: #322b6b;
+$background_color_4: transparent;
+$background_color_5: #b3b4b6;
+$background_color_6: #fff;
+$background_color_7: #d6440c;
+$background_color_8: #ffea38;
+$header_text_color2: #74b9ff;
+
+
+.header-text {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start-btn{
+  background-color: #26be10;
+  color: white;
+  text-transform: uppercase;
+}
+
+.info__item{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.info--text {
+  width: 178%;
+  margin-bottom: 5px;
+  font-family: $header_font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $color_2;
+}
+
+.form__input {
+  width: 40%;
+}
+
+.items{
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zones{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
